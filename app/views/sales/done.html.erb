@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Detail</th>
+      <th>Category</th>
+      <th>Value</th>
+      <th >Tax</th>
+      <th >Discount</th>
+      <th >Total</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sale.each do |item| %>
+      <tr>
+        <td><%= item.detail %></td>
+        <td><%= item.category  %></td>
+        <td><%= item.value  %></td>
+        <td><%= item.tax %></td>
+        <td><%= item.discount  %></td>
+        <td><%= item.total%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
